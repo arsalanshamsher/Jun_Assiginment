@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/University.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        .navbar-collapse ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .navbar-collapse ul li:hover::after {
+            width: 100%;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 62px;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hero-btn:hover {
+            border: 1px solid #f33446;
+            background: #f33446;
+            transition: 1s;
+        }
+
+        .closs-icon {
+            display: none;
+        }
+
+        .menue-bar {
+            display: none;
+        }
+
+        @media (max-width:1024px) {
+            .text-box h1 {
+                font-size: 52px;
+            }
+
+            nav img {
+                width: 80px;
+            }
+
+        }
+
+        @media(max-width:768px) {
+            nav img {
+                width: 70px;
+            }
+
+            .text-box h1 {
+                font-size: 42px;
+            }
+        }
+
+        @media (max-width:425px) {
+            nav img {
+                width: 50px;
+            }
+
+            .text-box {
+                margin-top: 40px;
+            }
+
+            .text-box h1 {
+                font-size: 32px;
+            }
+        }
+
+
+        .cta {
+            margin: 100px auto;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/planning.png);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta h1 {
+            color: #fff;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Arsalan -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <section class="header">
+                    <nav class="navbar navbar-expand-sm navbar-dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"><img src="F:\Websit\Universitylogo.png.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">ABOUT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">COURSE</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">BLOG</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">CONTECT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="row">
+                        <div class="col-8 col-md-6 col-lg-6 m-auto mt-5 " style="text-align: center ; color: #fff;">
+                            <h1>World's Biggest University</h1>
+                            <p>Making website is now one of the easiest thing in the world.
+                                you just need to learn HTML, CSS, javascript and you are good to go.
+                            </p>
+                            <a href="" class="hero-btn">Vist Us To know More</a>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9 m-auto cta">
+                <h1>Enroll for Our Varion Online Course <br> Anywhere From the World</h1>
+                <a href="" class="hero-btn">CONTECT US</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 m-auto footer">
+                <h4>About us</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis totam in, sunt ipsam commodi eius
+                    voluptatibus et incidunt labore,<br> blanditiis officiis aut unde
+                    , a assumenda beatae nemo id dicta vitae.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Arsalan -->
+
+    <!--Sayad Saad -->
+    <!--Sayad Saad -->
+
+    <!-- talha -->
+    <!-- talha -->
+
+    <!-- Nabeegh -->
+    <!-- Nabeegh -->
+
+    <!-- Saad -->
+    <!-- Saad -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
